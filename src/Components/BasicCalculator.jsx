@@ -26,13 +26,13 @@ const BasicCalculator = () => {
 
   return (
     <div className="flex justify-center items-center py-10 pt-12 px-5">
-      <div className="bg-white p-8 rounded-2xl border-2 border-green-300 shadow-lg w-full max-w-5xl">
+      <div className="bg-white p-8 rounded-2xl border-2 border-green-500 shadow-lg shadow-green-300/50 w-full max-w-5xl">
         <div className="mb-6">
           <input
             type="text"
             value={input}
             readOnly
-            className="w-full p-4 text-right text-3xl border-2 border-green-300/50 rounded-lg"
+            className="w-full p-4 text-right text-3xl border-2 border-green-500/50 rounded-lg"
           />
           <div className="text-right text-3xl text-gray-600 mt-3">{result}</div>
         </div>
@@ -42,8 +42,9 @@ const BasicCalculator = () => {
               key={button}
               onClick={() => handleClick(button)}
               className={`p-6 text-2xl font-bold ${
-                button === '=' ? 'bg-green-300' : ' border-2 border-black'
-              } text-black rounded-xl cursor-pointer hover:bg-green-300 transition-colors flex justify-center items-center`}
+                button === 'C' ? 'bg-red-500' : 
+                button === '=' ? 'bg-green-500' : 'border-2 border-green-500'
+              } text-black rounded-xl cursor-pointer hover:bg-green-500 transition-colors flex justify-center items-center`}
             >
               {button}
             </button>

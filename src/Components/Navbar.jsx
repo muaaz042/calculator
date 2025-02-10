@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
 
-        <div className={`flex justify-between items-center w-full mx-auto  md:px-24 px-7 md:py-3 py-2 shadow-lg `}>
+        <div className={`flex justify-between items-center w-full mx-auto  md:px-24 px-7 md:py-3 py-2 shadow-green-300/50 shadow-lg `}>
             <div className='flex gap-5 items-center'>
                 <Link to='/'><img src="./cal.jpg" alt="" className='w-16'/></Link>
 
