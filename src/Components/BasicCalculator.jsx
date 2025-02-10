@@ -26,7 +26,7 @@ const BasicCalculator = () => {
 
   return (
     <div className="flex justify-center items-center py-10 pt-12 px-5">
-      <div className="bg-white p-8 rounded-2xl border-2 border-green-500 shadow-lg shadow-green-300/50 w-full max-w-5xl">
+      <div className="bg-white lg:p-8 md:p-6 sm:p-4 p-3 rounded-2xl border-2 border-green-500 shadow-lg shadow-green-300/50 w-full max-w-5xl">
         <div className="mb-6">
           <input
             type="text"
@@ -36,7 +36,7 @@ const BasicCalculator = () => {
           />
           <div className="text-right text-3xl text-gray-600 mt-3">{result}</div>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 lg:gap-4 md:gap-3 sm:gap-2 gap-1.5">
           {['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', 'C', '0', '=', '+'].map((button) => (
             <button
               key={button}

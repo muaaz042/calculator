@@ -91,7 +91,7 @@ const AdvancedCalculator = () => {
 
   return (
     <div className="flex justify-center items-center py-12 px-5">
-      <div className="bg-white p-8  rounded-2xl border-2 border-green-500 shadow-lg shadow-green-300/50 w-full max-w-4xl">
+      <div className="bg-white lg:p-8 md:p-6 sm:p-4 p-3 rounded-2xl border-2 border-green-500 shadow-lg shadow-green-300/50 w-full max-w-4xl">
         <div className="mb-6">
           <input
             type="text"
@@ -101,7 +101,7 @@ const AdvancedCalculator = () => {
           />
           <div className="text-right text-3xl text-gray-600 mt-3">{result}</div>
         </div>
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid grid-cols-6 lg:gap-4 md:gap-3 sm:gap-2 gap-1">
           {[
             '7', '8', '9', '/', '√', 'C',
             '4', '5', '6', '*', '%', 'sin',
